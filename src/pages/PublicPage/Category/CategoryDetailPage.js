@@ -1,17 +1,19 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "../../../components/NavBar";
 
-import SignUpForm from "../../../features/signUp/components/SignUpForm";
+const CategoryDetailPage = () => {
 
-const SignUpPage = () => {
+    const { id } = useParams;
+
     return (
         <div>
             <Navbar />
-            <SignUpForm />
+            id
         </div>
     );
 };
 
-export default SignUpPage;
+export default CategoryDetailPage;

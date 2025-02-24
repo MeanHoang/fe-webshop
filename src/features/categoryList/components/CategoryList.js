@@ -26,7 +26,7 @@ const CategoryList = ({ showDropdown, setShowDropdown }) => {
     };
 
     const handleCategoryClick = (category) => {
-        navigate(`/category/${category.slug}`);
+        navigate(`/danhmuc/${category.id}`);
         setShowDropdown(false);
     };
 

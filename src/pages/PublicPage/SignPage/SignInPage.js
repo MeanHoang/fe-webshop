@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navbar from "../../../components/NavBar";
+
+import SignInForm from "../../../features/signIn/components/SignInForm";
 
 const SignInPage = () => {
-
-
     return (
-        <div className="login-page">
-            Đăng nhập
+        <div>
+            <Navbar />
+            <SignInForm />
         </div>
     );
 };

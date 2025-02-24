@@ -9,10 +9,12 @@ import Home from "../pages/PublicPage/About/Home";
 const PublicRoutes = () => {
     return (
         <Routes>
-            <Route path="/login" element={<SignInPage />} />
+            <Route path="/dang-nhap" element={<SignInPage />} />
+            <Route path="/dang-ky" element={<SignUpPage />} />
 
             <Route path="/" element={<Home />} />
 
+            <Route path="/danhmuc/:id" element={<Home />} />
 
         </Routes>
     );
