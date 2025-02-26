@@ -2,13 +2,12 @@ import axios from "axios";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-const getUserById = async (userId) => {
+const getProductByCategoryId = async (categoryId) => {
     try {
-        const url = `${BASE_URL}/user/profile`;
-        console.log("check API URL:", url, "with params:", { userId });
+        const url = `${BASE_URL}/product/product-category`;
 
         const response = await axios.get(url, {
-            params: { userId },
+            params: { categoryId },
         });
 
         console.log("check response:", response.data);
@@ -19,4 +18,4 @@ const getUserById = async (userId) => {
     }
 };
 
-export default getUserById;
+export default getProductByCategoryId;

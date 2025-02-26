@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "../../../components/NavBar";
-import CategoryDetail from "../../../features/categoryDetail/components/CategoryDetail";
 
 const CategoryDetailPage = () => {
 
@@ -12,7 +11,7 @@ const CategoryDetailPage = () => {
     return (
         <div>
             <Navbar />
-            <CategoryDetail categoryId={id} />
+            <ProductDetail categoryId={id} />
         </div>
     );
 };

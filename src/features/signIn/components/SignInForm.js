@@ -18,7 +18,7 @@ const SignInForm = () => {
 
         try {
             const data = await signIn(emailOrPhone, password);
-            localStorage.setItem("user", JSON.stringify(data.user));
+            localStorage.setItem("userId", JSON.stringify(data.user.id));
 
             toast.success(data.message);
 
@@ -62,7 +62,7 @@ const SignInForm = () => {
                     <Button
                         variant="outline-secondary"
                         className="w-100"
-                        onClick={() => navigate("/dang-ky")}  // Dùng navigate thay vì reload trang
+                        onClick={() => navigate("/dang-ky")}
                     >
                         Tạo tài khoản mới
                     </Button>

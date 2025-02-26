@@ -6,6 +6,8 @@ import SignUpPage from "../pages/PublicPage/SignPage/SignUpPage";
 
 import Home from "../pages/PublicPage/About/Home";
 
+import CategoryDetailPage from "../pages/PublicPage/Category/CategoryDetailPage";
+
 const PublicRoutes = () => {
     return (
         <Routes>
@@ -14,7 +16,7 @@ const PublicRoutes = () => {
 
             <Route path="/" element={<Home />} />
 
-            <Route path="/danhmuc/:id" element={<Home />} />
+            <Route path="/danhmuc/:id" element={<CategoryDetailPage />} />
 
         </Routes>
     );

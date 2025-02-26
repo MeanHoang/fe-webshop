@@ -4,6 +4,7 @@ import PublicRoutes from "./PublicRoutes";
 import PrivateRoutes from "./PrivateRoutes";
 
 import AccountDetailPage from "../pages/PrivatePage/Account/AccoutDetailPage";
+import ManageOrderPage from "../pages/PrivatePage/Order/ManageOrderPage";
 
 const AppRoutes = () => {
     return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
             {/* Route bảo vệ */}
             <Route element={<PrivateRoutes />}>
                 <Route path="/thong-tin-tai-khoan" element={<AccountDetailPage />} />
+                <Route path="/lich-su-don-hang" element={<ManageOrderPage />} />
 
             </Route>
 
